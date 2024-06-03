@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 
 IMAGE=docker.io/grafana/k6
-SCENARIO=scenarios/basic.js
-VUS=2
+SCENARIO=scenarios/contact.js
+VUS=1
 
 run:
-	docker run --rm -i ${IMAGE} run - --vus ${VUS} --duration 300s < ${IMAGE}
+	docker run --network=host --rm -e 'K6_INFLUXDB_PUSH_INTERVAL=1s' -e 'K6_OUT=influxdb=http://localhost:8086/k6' -i ${IMAGE} run - < ${SCENARIO}

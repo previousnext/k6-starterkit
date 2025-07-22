@@ -5,14 +5,16 @@ A starterkit for load testing sites with [k6](https://k6.io).
 
 ## What should I do with this starterkit?
 
-- Copy this starterkit into your application code base.
+- Copy this starterkit.
 - Add scenarios which are more appropriate for your project.
-- Adjust the base vitual users in the Makefile.
+- Update `src/k6.js` to register the scenarios.
+- Adjust or create `config/` files for your test run.
 - Execute a test with `make run`.
+- Execute a different configuration by updating `Makefile` or using `make run CONFIG=mild`.
 
 ## Example scenarios
 
-- **basic.js** - A simple script demonstrating how to check a page and wait t
+- **basic.js** - A simple script demonstrating how to check a page and wait.
 - **cookie.js** - How to use cookies to avoid logging into a site.
 - **httpauth.js** - How to test a site with http authentication configured.
 
@@ -20,4 +22,5 @@ A starterkit for load testing sites with [k6](https://k6.io).
 
 - `make start` to fire up the container.
 - Visit http://localhost:3000 to view the dashboard.
+- Open 'Dashboards > k6 Load Testing Results'.
 - `make stop` to shut everything down when you're finished.

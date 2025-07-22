@@ -1,0 +1,48 @@
+{
+  "scenarios": {
+    "search": {
+      "exec": "search",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "10m"
+    },
+    "pageNotFound": {
+      "exec": "pageNotFound",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "10m"
+    },
+    "basic": {
+      "exec": "basic",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "10m"
+    },
+    "cookie": {
+      "exec": "cookie",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "10m"
+    },
+    "frontpage": {
+      "exec": "frontpage",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "10m"
+    },
+    "httpauth": {
+      "exec": "httpauth",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "10m"
+    }
+  },
+  "thresholds": {
+    "http_req_duration{scenario:search}": [],
+    "http_req_duration{scenario:pageNotFound}": [],
+    "http_req_duration{scenario:basic}": [],
+    "http_req_duration{scenario:cookie}": [],
+    "http_req_duration{scenario:frontpage}": [],
+    "http_req_duration{scenario:httpauth}": []
+  }
+}

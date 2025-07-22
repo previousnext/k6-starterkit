@@ -26,7 +26,7 @@
             },
             "fill": 1,
             "id": 1,
-            "interval": ">1s",
+            "interval": "1s",
             "legend": {
               "alignAsTable": true,
               "avg": false,
@@ -365,7 +365,7 @@
             },
             "fill": 1,
             "id": 10,
-            "interval": ">1s",
+            "interval": "1s",
             "legend": {
               "alignAsTable": true,
               "avg": true,
@@ -481,7 +481,7 @@
         "repeatIteration": null,
         "repeatRowId": null,
         "showTitle": false,
-        "title": "Dashboard Row",
+        "title": "Global metrics",
         "titleSize": "h6"
       },
       {
@@ -1173,7 +1173,7 @@
             "fill": 1,
             "height": "250px",
             "id": 5,
-            "interval": ">1s",
+            "interval": "1s",
             "legend": {
               "alignAsTable": false,
               "avg": false,
@@ -1420,7 +1420,7 @@
             "height": "250px",
             "highlightCards": true,
             "id": 8,
-            "interval": ">1s",
+            "interval": "1s",
             "links": [],
             "span": 6,
             "targets": [
@@ -1494,17 +1494,6 @@
         "repeatRowId": null,
         "showTitle": true,
         "title": "$Measurement",
-        "titleSize": "h6"
-      },
-      {
-        "collapse": false,
-        "height": 250,
-        "panels": [],
-        "repeat": null,
-        "repeatIteration": null,
-        "repeatRowId": null,
-        "showTitle": false,
-        "title": "Dashboard Row",
         "titleSize": "h6"
       }
     ],

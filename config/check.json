@@ -1,0 +1,54 @@
+{
+  "scenarios": {
+    "search": {
+      "exec": "search",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "2s"
+    },
+    "pageNotFound": {
+      "exec": "pageNotFound",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "2s"
+    },
+    "basic": {
+      "exec": "basic",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "2s"
+    },
+    "cookie": {
+      "exec": "cookie",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "2s"
+    },
+    "frontpage": {
+      "exec": "frontpage",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "2s"
+    },
+    "httpauth": {
+      "exec": "httpauth",
+      "executor": "constant-vus",
+      "vus": 1,
+      "duration": "2s"
+    }
+  },
+  "thresholds": {
+    "checks{scenario:search}": ["rate>0.9"],
+    "checks{scenario:pageNotFound}": ["rate>0.9"],
+    "checks{scenario:basic}": ["rate>0.9"],
+    "checks{scenario:cookie}": ["rate>0.9"],
+    "checks{scenario:frontpage}": ["rate>0.9"],
+    "checks{scenario:httpauth}": ["rate>0.9"],
+    "http_req_duration{scenario:search}": [],
+    "http_req_duration{scenario:pageNotFound}": [],
+    "http_req_duration{scenario:basic}": [],
+    "http_req_duration{scenario:cookie}": [],
+    "http_req_duration{scenario:frontpage}": [],
+    "http_req_duration{scenario:httpauth}": []
+  }
+}

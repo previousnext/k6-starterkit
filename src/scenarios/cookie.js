@@ -1,7 +1,7 @@
 import http from "k6/http"
 import { check } from "k6"
 
-export default function () {
+export function cookie() {
   // NOTE: Log into the site as a user and use their cookie for the test.
   const cookies = {
     SSESS_CHANGE_ME: {
@@ -14,5 +14,5 @@ export default function () {
 
   // Check the front page.
   let res = http.get(baseURL, { cookies })
-  check(res, { "status was 200": r => r.status === 200 })
+  check(res, { "Status Code": r => r.status === 200 })
 }

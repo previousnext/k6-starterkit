@@ -9,8 +9,7 @@ A starterkit for load testing sites with [k6](https://k6.io).
 - Add scenarios which are more appropriate for your project.
 - Update `src/k6.js` to register the scenarios.
 - Adjust or create `config/` files for your test run.
-- Execute a test with `make run`.
-- Execute a different configuration by updating `Makefile` or using `make run CONFIG=mild`.
+- Execute a test with `mise scenario [scenario]`.
 
 ## Example scenarios
 
@@ -20,7 +19,7 @@ A starterkit for load testing sites with [k6](https://k6.io).
 
 ## Grafana dashboard
 
-- `make start` to fire up the container.
+- `mise start` to fire up the container.
 - Visit http://localhost:3000 to view the dashboard.
 - Open 'Dashboards > k6 Load Testing Results'.
-- `make stop` to shut everything down when you're finished.
+- `mise stop` to shut everything down when you're finished.
